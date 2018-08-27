@@ -9,7 +9,7 @@ module.exports = {
 
 function getUsers (testConn) {
   const conn = testConn || connection
-  return conn('users').select()
+  return conn('people').select()
 }
 
 function getUser (id, testConn) {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Boilerplate: Knex.js
 
 Phase 1 boilerplate project with:
@@ -22,3 +23,7 @@ yarn dev
 
 Be sure to check out the other npm scripts too.
 
+=======
+# punt-club
+An application to summarise the club's standings
+>>>>>>> 05093fdd19068e2d4e7248b003062cf223c882dc

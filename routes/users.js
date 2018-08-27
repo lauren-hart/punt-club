@@ -19,8 +19,7 @@ router.get('/', (req, res) => {
 router.get('/data', (req, res) => {
   db.getData()
     .then(datas => {
-      console.log(datas)
-      res.render('data', {datas})
+      res.render('data', {datas: datas})
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)

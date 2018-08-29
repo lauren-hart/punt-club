@@ -6,7 +6,7 @@ module.exports = {
   getUsers: getUsers,
   getData: getData,
   getUser: getUser,
-  editData: editData
+  showData: showData
 }
 
 // to display people from people table
@@ -16,18 +16,20 @@ function getUsers (testConn) {
 }
 
 // to display data from data table
-function getData (testConn) {
+function showData (testConn) {
   const conn = testConn || connection
   return conn('rawdata').select()
 }
 
-// To get userID from params
+// To get userID from database
 function getUser (id, testConn) {
   const conn = testConn || connection
   return conn('users').where('id', id).first()
 }
 
-function editData (id, testConn) {
+// To get data ID from database. We pass it in to params
+// through the data.hbs file.
+function getData (id, testConn) {
   const conn = testConn || connection
   return conn('users').where('id', id).first()
 }

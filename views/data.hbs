@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Data</title>
+    <link rel="stylesheet" href="/main.css">
   </head>
   <body>
-    <h1>Raw Data</h1>
+    <h1>Data</h1>
     <ul>
     {{#each datas}}
-      <li>{{description}} : {{amount}}</li>
-      <a href="/edit"><button>edit</button></a>
+      <li>{{description}} : {{amount}}</li><a href="/edit/{{id}}"><button>edit</button></a>
     {{/each}}
     </ul>
+    <a href="/add"><button>Add Entry</button></a>
   </body>
 </html>

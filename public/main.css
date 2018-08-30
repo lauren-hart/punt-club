@@ -1,0 +1,21 @@
+
+/* BOX GRID -----------------
+*/
+
+* { 
+  outline: 1px solid #947676 !important; 
+  } 
+  
+  * { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  -ms-box-sizing: border-box; 
+  box-sizing: border-box; 
+  } 
+
+
+
+body {
+  font-family: 'Courier New', Courier, monospace !important;
+  background: rgb(233, 250, 250); 
+}

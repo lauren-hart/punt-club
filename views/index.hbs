@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Punt Club</title>
-    <link rel="stylesheet" href="/main.css">
-  </head>
-  <body>
-    <h1>Raro Punt Club</h1>
-    <ul>
-    {{#each users}}
-      <li>{{name}} : {{couple}}</li>
-    {{/each}}
-    </ul>
-    <a href="./data"><button>Data</button></a>
-  </body>
-</html>
+
+{{> header }}
+
+<div class="container">
+        <ul>
+        {{#each users}}
+          <li>{{name}} : {{couple}}</li>
+        {{/each}}
+        </ul>
+        <a href="./data"><button>Data</button></a>
+  </div>
+  
+{{> footer }}
+
+
+
